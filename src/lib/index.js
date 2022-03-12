@@ -26,6 +26,7 @@ const Confetti = ({
   explosionXForce = 50,
   colors: _colors = null,
   randomColors = 8,
+  onFinish,
 }) => {
   const canvas = React.useRef();
   const [confetti, setConfetti] = React.useState([]);
@@ -95,6 +96,7 @@ const Confetti = ({
       if (piece.position.y >= canvas.current.height) confetti.splice(index, 1);
 
       if (confetti.length === 0) {
+        onFinish && onFinish();
         setConfetti([]);
       }
     });

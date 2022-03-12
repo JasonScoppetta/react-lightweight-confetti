@@ -16,6 +16,7 @@ export interface Confetti {
   explosionXForce?: number;
   colors?: ConfettiColor[] | null;
   randomColors?: number;
+  onFinish?: () => void;
 }
 
 declare const Confetti: FC<Confetti>;
