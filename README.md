@@ -1,6 +1,6 @@
 # Lightweight React Confetti Explosion
 ## Available Scripts
 
-In the project directory, you can run:
+Install
 
-### `npm start`
+### `npm install react-lightweight-confetti`
